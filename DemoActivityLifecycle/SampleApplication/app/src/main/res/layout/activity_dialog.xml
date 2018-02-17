@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="app.sample.sampleapplication.DialogActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:orientation="vertical"
+        android:padding="12dip"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="170dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dip"
+            android:text="Simple Dialog"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/killDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:onClick="killDialog"
+            android:text="Close"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
