@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="storage.data.app.datastorage.SearchItemActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="25dp"
+        android:text="Search Product Item"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/itemNameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="45dp"
+        android:text="Item Name:"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itemNameInput"
+        app:layout_constraintEnd_toStartOf="@+id/itemNameInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/itemNameInput"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/itemDescInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="16dp"
+        android:text="Item Description:"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itemDescInput"
+        app:layout_constraintEnd_toStartOf="@+id/itemDescInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/itemDescInput"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/itemReviewInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="221dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="45dp"
+        android:text="Item Price:"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemPriceInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/itemPriceInput"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Item Review:"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/itemReviewInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemReviewInput" />
+
+    <TextView
+        android:id="@+id/itemReviewInput"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/itemPriceInput" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="42dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Search"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        android:onClick="searchItem"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="82dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Cancel"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="cancel"/>
+
+</android.support.constraint.ConstraintLayout>
